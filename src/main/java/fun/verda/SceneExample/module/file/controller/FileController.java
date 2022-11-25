@@ -9,7 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import sun.misc.BASE64Decoder;
+import java.util.Base64;
 
 import javax.annotation.Resource;
 import javax.servlet.ServletOutputStream;
@@ -45,9 +45,8 @@ public class FileController {
         if (img == null) {
             return "error, empty img";
         }
-        BASE64Decoder decoder = new BASE64Decoder();
         try {
-            byte[] b = decoder.decodeBuffer(img);
+            byte[] b = Base64.getDecoder().decode(img);
             for (int i = 0; i < b.length; i++) {
                 if (b[i] < 0) {
                     b[i] += 256;
