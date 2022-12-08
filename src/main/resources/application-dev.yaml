@@ -33,3 +33,9 @@ springdoc:
     csrf:
       header-name: token
 
+s3:
+  endpoint: http:localhost:9000
+  accessKey: qjVcuAueyAh00LoZ
+  secretKey: oukYHmAxXjSZo3S0yjdXV3wB6D5yEuE1
+  bucket: demo-bucket
+

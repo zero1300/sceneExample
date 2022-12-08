@@ -78,6 +78,11 @@
 			<version>1.6.12</version>
 		</dependency>
 
+		<dependency>
+			<groupId>io.minio</groupId>
+			<artifactId>minio</artifactId>
+			<version>8.4.6</version>
+		</dependency>
 
 
 
@@ -122,12 +127,12 @@
 
 	</profiles>
 
-<!--	<repositories>-->
-<!--		<repository>-->
-<!--			<id>central</id>-->
-<!--			<url>https://repo1.maven.org/maven2/</url>-->
-<!--		</repository>-->
-<!--	</repositories>-->
+	<repositories>
+		<repository>
+			<id>central</id>
+			<url>https://repo1.maven.org/maven2/</url>
+		</repository>
+	</repositories>
 
 
 </project>

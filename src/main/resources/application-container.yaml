@@ -28,4 +28,10 @@ springdoc:
   packages-to-scan: fun.verda.SceneExample.module
   paths-to-match: /**/*
 
+s3:
+  endpoint: http:172.17.0.1:9000
+  accessKey: qjVcuAueyAh00LoZ
+  secretKey: oukYHmAxXjSZo3S0yjdXV3wB6D5yEuE1
+  bucket: demo-bucket
+
 
